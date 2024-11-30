@@ -17,11 +17,9 @@ jobs:
       - name: touch
         run: touch archivo.txt
 
-        steps:
       - name: set text
         run: echo "hola mundo, archivo txt" >> archivo txt
 
-        steps:
       - name: read text
         run: cat archivo.txt
 
