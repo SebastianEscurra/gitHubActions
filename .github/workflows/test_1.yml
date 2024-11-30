@@ -8,8 +8,13 @@ on: [push]
 
 jobs:
   primer_job:
-    runs-on: ubuntu-latest #definir sistma operativo del servidor que realizara las acciones
+    runs-on: ubuntu-latest #definir sistma operativo del servidor que realizara las acciones, este debe definirse en cada uno de los jobs
     steps:
-      - name: primer step
+      - name: Imprimir hola mundo
         run: echo "hola mundo, este es mi primer step"
 
+  other:
+    runs-on: ubuntu-latest
+    steps:
+      - name: LS
+        run: ls -al
