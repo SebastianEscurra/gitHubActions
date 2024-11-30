@@ -1,0 +1,18 @@
+#definimos el nombre del workflow
+name: prueba1
+
+#definimos el evento disparador de este wf
+on: [push]
+
+
+
+#definimos jobs y steps
+
+jobs:
+  primer job:
+    runs-on: ubunto-latest #definir sistma operativo del servidor que realizara las acciones
+    
+    steps:
+      - name: primer step
+        run: echo "hola mundo, este es mi primer step"
+
