@@ -9,7 +9,7 @@ on: [push]
 #definimos jobs y steps
 
 jobs:
-  primer job:
+  primer_job:
     runs-on: ubunto-latest #definir sistma operativo del servidor que realizara las acciones
     
     steps:
