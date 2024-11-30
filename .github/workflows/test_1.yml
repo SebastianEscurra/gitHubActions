@@ -13,6 +13,18 @@ jobs:
       - name: Imprimir hola mundo
         run: echo "hola mundo, este es mi primer step"
 
+        steps:
+      - name: touch
+        run: touch archivo.txt
+
+        steps:
+      - name: set text
+        run: echo "hola mundo, archivo txt" >> archivo txt
+
+        steps:
+      - name: read text
+        run: cat archivo.txt
+
   other:
     runs-on: ubuntu-latest
     steps:
