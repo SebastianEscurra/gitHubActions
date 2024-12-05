@@ -24,6 +24,7 @@ jobs:
 
   other:
     runs-on: ubuntu-latest
+    needs: [primer_job]  #definimos dependencia, necesita que primero se ejecute el job primer_job antes de ejecutar other
     steps:
       - name: LS
         run: ls -al
